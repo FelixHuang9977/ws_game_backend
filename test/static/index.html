@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Client Test</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="auth-panel" class="panel">
+            <h2>Authentication</h2>
+            <div class="auth-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="button-group">
+                    <button onclick="register()">Register</button>
+                    <button onclick="login()">Login</button>
+                </div>
+            </div>
+            <div id="auth-status" class="status"></div>
+        </div>
+
+        <div id="game-panel" class="panel hidden">
+            <h2>Game Panel</h2>
+            <div class="game-controls">
+                <div class="message-area">
+                    <div id="messages" class="messages"></div>
+                    <div class="input-group">
+                        <input type="text" id="message-input" placeholder="Type a message...">
+                        <button onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+                <div class="game-status">
+                    <h3>Connected Players</h3>
+                    <ul id="players-list"></ul>
+                </div>
+            </div>
+            <div id="game-status" class="status"></div>
+        </div>
+    </div>
+    <script src="/static/client.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+fastapi==0.68.1
+uvicorn==0.15.0
+websockets==10.0
+python-jose==3.3.0
+python-multipart==0.0.5
+aiofiles==0.8.0
+starlette==0.14.2
