@@ -6,10 +6,10 @@
     "configurations": [
 
         {
-            "name": "Python Debugger: Current File",
+            "name": "debug web server client",
             "type": "debugpy",
             "request": "launch",
-            "program": "test_server.py",
+            "program": "frontend_web_server.py",
             "console": "integratedTerminal"
         }
     ]
